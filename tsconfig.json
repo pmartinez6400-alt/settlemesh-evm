@@ -1,0 +1,1 @@
+{"compilerOptions":{"esModuleInterop":true,"forceConsistentCasingInFileNames":true,"module":"commonjs","moduleResolution":"node","resolveJsonModule":true,"skipLibCheck":true,"strict":true,"target":"ES2022","types":["node","hardhat","mocha","chai"]},"exclude":["node_modules","dashboard"],"include":["hardhat.config.ts","contracts","test","agents","scripts"]}

@@ -1,0 +1,275 @@
+{
+  "generatedAt": "2026-10-30T06:35:30.188Z",
+  "network": "HashKey Chain Testnet",
+  "chainId": 133,
+  "contractAddress": "0xd9faa7CB899Ca84b63c4896BfB42FaC5BE1d0666",
+  "explorer": {
+    "txBase": "https://testnet-explorer.hsk.xyz/tx/",
+    "addressBase": "https://testnet-explorer.hsk.xyz/address/"
+  },
+  "policy": {
+    "perPaymentCap": "0.005",
+    "dailyCap": "0.012",
+    "allowlist": [
+      "0x03353f4c5c9350dd2e48b65ffc6613f78bb6beb6"
+    ]
+  },
+  "agents": {
+    "buyer": {
+      "name": "TreasuryBot (Buyer Agent)",
+      "address": "0xba19f522451a5A6926ea6b3dfdD0DAB30A761848",
+      "escrowFree": "0.01",
+      "spentToday": "0.01"
+    },
+    "seller": {
+      "name": "InsightAPI (Seller Agent)",
+      "address": "0x03353f4c5c9350dd2e48B65FFC6613F78Bb6BeB6",
+      "earned": "0.003"
+    },
+    "rogue": {
+      "name": "RogueAgent (unvetted)",
+      "address": "0xB892482e462Ad0f564D03496c399185f198434a7"
+    }
+  },
+  "jobs": [
+    {
+      "id": 0,
+      "buyer": "0xba19f522451a5A6926ea6b3dfdD0DAB30A761848",
+      "payee": "0x03353f4c5c9350dd2e48B65FFC6613F78Bb6BeB6",
+      "amount": "0.003",
+      "amountWei": "3000000000000000",
+      "serviceRef": "0xec8b830b16b249da00a7235ea2a2745e4dc42e1d11c574d4428cc1344d0de457",
+      "deliveryHash": "0xec58478c404301598fee522ac530b3d5d11f6446687066ca4123e4e48ce544bc",
+      "deadline": 1793345702,
+      "status": "Released"
+    },
+    {
+      "id": 1,
+      "buyer": "0xba19f522451a5A6926ea6b3dfdD0DAB30A761848",
+      "payee": "0x03353f4c5c9350dd2e48B65FFC6613F78Bb6BeB6",
+      "amount": "0.005",
+      "amountWei": "5000000000000000",
+      "serviceRef": "0xd866ca8396039c6a4e8735171efdd9236f200e552a60b6316d71ef7a9e8c3df0",
+      "deliveryHash": "0x43e0da8983bdfb363a5b14b84d627a8c4386ca96b3bf041964a457e2121acb37",
+      "deadline": 1793345712,
+      "status": "Delivered"
+    },
+    {
+      "id": 2,
+      "buyer": "0xba19f522451a5A6926ea6b3dfdD0DAB30A761848",
+      "payee": "0x03353f4c5c9350dd2e48B65FFC6613F78Bb6BeB6",
+      "amount": "0.002",
+      "amountWei": "2000000000000000",
+      "serviceRef": "0x5f208d27c668d2437f6e5e35f433e8f5c4576ab4c2c93019f98f9b2f7de983d6",
+      "deliveryHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "deadline": 1793342123,
+      "status": "Refunded"
+    }
+  ],
+  "events": [
+    {
+      "ts": "2026-10-30T06:34:48.659Z",
+      "actor": "SYSTEM",
+      "kind": "info",
+      "message": "funded three fresh agent wallets from the throwaway deployer key",
+      "explorerUrl": null
+    },
+    {
+      "ts": "2026-10-30T06:34:50.676Z",
+      "actor": "SYSTEM",
+      "kind": "info",
+      "message": "SettleMesh deployed at 0xd9faa7CB899Ca84b63c4896BfB42FaC5BE1d0666 (chain 133, HashKey testnet)",
+      "explorerUrl": null
+    },
+    {
+      "ts": "2026-10-30T06:34:53.257Z",
+      "actor": "BUYER",
+      "kind": "policy",
+      "message": "policy published on-chain: per-payment cap 0.005 tHSK, daily cap 0.012 tHSK",
+      "explorerUrl": null
+    },
+    {
+      "ts": "2026-10-30T06:34:55.386Z",
+      "actor": "BUYER",
+      "kind": "policy",
+      "message": "allowlisted payee 0x03353f4c5c9350dd2e48b65ffc6613f78bb6beb6",
+      "explorerUrl": null
+    },
+    {
+      "ts": "2026-10-30T06:34:57.286Z",
+      "actor": "BUYER",
+      "kind": "job",
+      "message": "deposited 0.02 tHSK into escrow (buyer 0xba19f522451a5A6926ea6b3dfdD0DAB30A761848)",
+      "txHash": "0xa4c07a53167c31caf4f764968d84406a7172a16b873420e35990f3ccba026b61",
+      "explorerUrl": "https://testnet-explorer.hsk.xyz/tx/0xa4c07a53167c31caf4f764968d84406a7172a16b873420e35990f3ccba026b61"
+    },
+    {
+      "ts": "2026-10-30T06:34:57.287Z",
+      "actor": "SELLER",
+      "kind": "quote",
+      "message": "InsightAPI (Seller Agent) quotes \"Token Risk Report\" for HSK: 0.003 tHSK",
+      "explorerUrl": null
+    },
+    {
+      "ts": "2026-10-30T06:34:59.478Z",
+      "actor": "BUYER",
+      "kind": "job",
+      "message": "job #0 escrowed: 0.003 tHSK for \"token-risk-report\" (HSK)",
+      "txHash": "0xaa77dbce32b39cfee35cab22834a733a85bf0c7dadb641f70a4c1079fbcd4276",
+      "explorerUrl": "https://testnet-explorer.hsk.xyz/tx/0xaa77dbce32b39cfee35cab22834a733a85bf0c7dadb641f70a4c1079fbcd4276"
+    },
+    {
+      "ts": "2026-10-30T06:34:59.479Z",
+      "actor": "SELLER",
+      "kind": "delivery",
+      "message": "delivered \"token-risk-report\" for HSK — report hash 0xec58478c40430159…",
+      "explorerUrl": null
+    },
+    {
+      "ts": "2026-10-30T06:35:01.382Z",
+      "actor": "SELLER",
+      "kind": "delivery",
+      "message": "seller attested delivery hash on-chain for job #0",
+      "txHash": "0x96d2ae06a5561439a7b5c1c4e34a25a7e881a95696f6025fd5b0fb9a57f44735",
+      "explorerUrl": "https://testnet-explorer.hsk.xyz/tx/0x96d2ae06a5561439a7b5c1c4e34a25a7e881a95696f6025fd5b0fb9a57f44735"
+    },
+    {
+      "ts": "2026-10-30T06:35:01.632Z",
+      "actor": "BUYER",
+      "kind": "info",
+      "message": "delivery verified for job #0 (hash matches attestation) — releasing payment",
+      "explorerUrl": null
+    },
+    {
+      "ts": "2026-10-30T06:35:03.532Z",
+      "actor": "CHAIN",
+      "kind": "payment",
+      "message": "job #0 settled: 0.003 tHSK released to seller 0x03353f4c5c9350dd2e48B65FFC6613F78Bb6BeB6",
+      "txHash": "0xdbc799f4565e7c3030c0977149be085cb24317b11d1e5a90b92aa39a5bd00231",
+      "explorerUrl": "https://testnet-explorer.hsk.xyz/tx/0xdbc799f4565e7c3030c0977149be085cb24317b11d1e5a90b92aa39a5bd00231"
+    },
+    {
+      "ts": "2026-10-30T06:35:03.532Z",
+      "actor": "SELLER",
+      "kind": "quote",
+      "message": "InsightAPI (Seller Agent) quotes \"Deep-Dive Due Diligence\" for HSK: 0.009 tHSK",
+      "explorerUrl": null
+    },
+    {
+      "ts": "2026-10-30T06:35:03.781Z",
+      "actor": "BUYER",
+      "kind": "refusal",
+      "message": "REFUSED \"deep-dive-report\" for HSK @ 0.009 tHSK — amount 0.009 tHSK exceeds per-payment cap 0.005 tHSK",
+      "explorerUrl": null
+    },
+    {
+      "ts": "2026-10-30T06:35:05.701Z",
+      "actor": "CHAIN",
+      "kind": "chain-refusal",
+      "message": "contract independently REFUSED the same payment on-chain: transaction execution reverted",
+      "explorerUrl": null
+    },
+    {
+      "ts": "2026-10-30T06:35:05.702Z",
+      "actor": "SELLER",
+      "kind": "quote",
+      "message": "RogueAgent (unvetted) quotes \"Token Risk Report\" for HSK: 0.003 tHSK",
+      "explorerUrl": null
+    },
+    {
+      "ts": "2026-10-30T06:35:05.946Z",
+      "actor": "BUYER",
+      "kind": "refusal",
+      "message": "REFUSED \"token-risk-report\" for HSK @ 0.003 tHSK — payee 0xB892482e462Ad0f564D03496c399185f198434a7 is not on the allowlist",
+      "explorerUrl": null
+    },
+    {
+      "ts": "2026-10-30T06:35:07.857Z",
+      "actor": "CHAIN",
+      "kind": "chain-refusal",
+      "message": "contract independently REFUSED the same payment on-chain: transaction execution reverted",
+      "explorerUrl": null
+    },
+    {
+      "ts": "2026-10-30T06:35:07.857Z",
+      "actor": "SELLER",
+      "kind": "quote",
+      "message": "InsightAPI (Seller Agent) quotes \"Portfolio Scan\" for HSK+BTC+ETH: 0.005 tHSK",
+      "explorerUrl": null
+    },
+    {
+      "ts": "2026-10-30T06:35:10.025Z",
+      "actor": "BUYER",
+      "kind": "job",
+      "message": "job #1 escrowed: 0.005 tHSK for \"portfolio-scan\" (HSK+BTC+ETH)",
+      "txHash": "0x9173afdf034d07c60ae840b48f500914514f52930fc21a94b362378e6f10cd28",
+      "explorerUrl": "https://testnet-explorer.hsk.xyz/tx/0x9173afdf034d07c60ae840b48f500914514f52930fc21a94b362378e6f10cd28"
+    },
+    {
+      "ts": "2026-10-30T06:35:10.030Z",
+      "actor": "SELLER",
+      "kind": "delivery",
+      "message": "delivered \"portfolio-scan\" for HSK+BTC+ETH — report hash 0x43e0da8983bdfb36…",
+      "explorerUrl": null
+    },
+    {
+      "ts": "2026-10-30T06:35:11.922Z",
+      "actor": "SELLER",
+      "kind": "delivery",
+      "message": "seller attested delivery hash on-chain for job #1",
+      "txHash": "0xa54731fe89702fd2a53e4c99b2679f94dd28f2f5152cee59255f47fae1d07618",
+      "explorerUrl": "https://testnet-explorer.hsk.xyz/tx/0xa54731fe89702fd2a53e4c99b2679f94dd28f2f5152cee59255f47fae1d07618"
+    },
+    {
+      "ts": "2026-10-30T06:35:12.168Z",
+      "actor": "BUYER",
+      "kind": "refusal",
+      "message": "delivery hash mismatch for job #1 — payment NOT released",
+      "explorerUrl": null
+    },
+    {
+      "ts": "2026-10-30T06:35:12.442Z",
+      "actor": "SELLER",
+      "kind": "quote",
+      "message": "InsightAPI (Seller Agent) quotes \"Portfolio Scan\" for BTC+ETH+SOL: 0.005 tHSK",
+      "explorerUrl": null
+    },
+    {
+      "ts": "2026-10-30T06:35:12.442Z",
+      "actor": "BUYER",
+      "kind": "refusal",
+      "message": "REFUSED another portfolio scan @ 0.005 tHSK — amount 0.005 tHSK on top of today's 0.008 tHSK exceeds daily cap 0.012 tHSK",
+      "explorerUrl": null
+    },
+    {
+      "ts": "2026-10-30T06:35:14.311Z",
+      "actor": "CHAIN",
+      "kind": "chain-refusal",
+      "message": "contract independently REFUSED it on-chain: transaction execution reverted",
+      "explorerUrl": null
+    },
+    {
+      "ts": "2026-10-30T06:35:14.312Z",
+      "actor": "SELLER",
+      "kind": "quote",
+      "message": "InsightAPI (Seller Agent) quotes \"Token Risk Report\" for GHOST: 0.003 tHSK",
+      "explorerUrl": null
+    },
+    {
+      "ts": "2026-10-30T06:35:16.191Z",
+      "actor": "BUYER",
+      "kind": "job",
+      "message": "job #2 escrowed 0.002 tHSK — seller never delivers",
+      "txHash": "0xc4064b9075e25d8a1dab31a2a0a225ee618c8ba2aef339a16bff809ccee074fb",
+      "explorerUrl": "https://testnet-explorer.hsk.xyz/tx/0xc4064b9075e25d8a1dab31a2a0a225ee618c8ba2aef339a16bff809ccee074fb"
+    },
+    {
+      "ts": "2026-10-30T06:35:28.291Z",
+      "actor": "CHAIN",
+      "kind": "refund",
+      "message": "job #2 expired undelivered — 0.002 tHSK refunded, daily budget restored",
+      "txHash": "0x558641119a4d30dad072b09123719448e08ee17c9e1d72a3bf1dfb47c969a710",
+      "explorerUrl": "https://testnet-explorer.hsk.xyz/tx/0x558641119a4d30dad072b09123719448e08ee17c9e1d72a3bf1dfb47c969a710"
+    }
+  ]
+}

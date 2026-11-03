@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SettleMesh — Policy-Guarded Agent Payments</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>SettleMesh</h1>
+        <p class="tagline">
+          Policy-guarded agent-to-agent payments — the buyer agent's spending
+          policy is enforced <strong>on-chain</strong>, not just promised.
+        </p>
+      </div>
+      <div class="netbox">
+        <div id="network" class="badge">loading…</div>
+        <div id="contract" class="mono small"></div>
+        <div id="generated" class="small dim"></div>
+      </div>
+    </header>
+
+    <section id="refusals" class="refusal-banner" hidden>
+      <h2>⛔ The Refusal — policy enforced on-chain</h2>
+      <ul id="refusal-list"></ul>
+      <p class="small">
+        The buyer agent refused first — then tried to pay anyway. The contract
+        refused independently. A compromised or manipulated agent cannot move
+        money outside its policy.
+      </p>
+    </section>
+
+    <main class="grid">
+      <section class="card">
+        <h2>🛡️ Buyer spending policy (on-chain)</h2>
+        <dl>
+          <dt>Per-payment cap</dt>
+          <dd id="cap-per" class="mono">—</dd>
+          <dt>Daily cap</dt>
+          <dd id="cap-daily" class="mono">—</dd>
+          <dt>Allowlisted payees</dt>
+          <dd id="allowlist" class="mono small">—</dd>
+        </dl>
+      </section>
+
+      <section class="card">
+        <h2>🤖 Agents</h2>
+        <div id="agents"></div>
+      </section>
+
+      <section class="card wide">
+        <h2>📑 Escrow jobs</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Payee</th>
+              <th>Amount (tHSK)</th>
+              <th>Status</th>
+              <th>Delivery hash</th>
+            </tr>
+          </thead>
+          <tbody id="jobs"></tbody>
+        </table>
+      </section>
+
+      <section class="card wide">
+        <h2>🧾 Settlement log</h2>
+        <ol id="events" class="events"></ol>
+      </section>
+    </main>
+
+    <footer class="small dim">
+      State exported by the SettleMesh demo run (<code>npm run demo</code> /
+      <code>npm run demo:testnet</code>). HashKey Chain · SettleMesh escrow ·
+      amounts in tHSK (testnet) — no real funds.
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+node_modules/
+artifacts/
+cache/
+typechain-types/
+coverage/
+coverage.json
+
+# NEVER commit the throwaway testnet key
+.throwaway-key.json
+.env
+
+# dashboard/state.json IS committed: it is the sample state produced by the
+# local demo run, so the dashboard renders meaningfully straight from the repo.
+
+*.log
+.DS_Store
